@@ -14,14 +14,43 @@
             <objects>
                 <controller title="Campus" id="5OI-QQ-smy" customClass="InterfaceController" customModule="Campus_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView alignment="left" id="ZTM-XY-WOw"/>
+                        <imageView alignment="left" id="ZTM-XY-WOw">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer numberOfTapsRequired="2" id="n4p-3y-Qvb">
+                                    <connections>
+                                        <action selector="tapGestureRecognized:" destination="5OI-QQ-smy" id="ftc-SQ-kTo"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                                <panGestureRecognizer id="SA7-Yh-QF9">
+                                    <connections>
+                                        <action selector="panGestureRecognized:" destination="5OI-QQ-smy" id="5mT-FX-QNs"/>
+                                    </connections>
+                                </panGestureRecognizer>
+                            </gestureRecognizers>
+                        </imageView>
                     </items>
                     <menu key="menu" id="3aT-TG-oOv">
                         <items>
-                            <menuItem title="Zoom" image="zoom" id="D8w-8G-ai0"/>
-                            <menuItem title="Move" image="move" id="ph1-Oh-up5"/>
-                            <menuItem title="Inspect" image="inspect" id="zpC-d9-Aac"/>
-                            <menuItem title="Reset Plot" image="reset" id="hPL-SM-4bf"/>
+                            <menuItem title="Zoom" image="zoom" id="D8w-8G-ai0">
+                                <connections>
+                                    <action selector="zoomMenuItemPressed" destination="5OI-QQ-smy" id="2k6-vh-fdy"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Move" image="move" id="ph1-Oh-up5">
+                                <connections>
+                                    <action selector="moveMenuItemPressed" destination="5OI-QQ-smy" id="NpW-fm-2dJ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Inspect" image="inspect" id="zpC-d9-Aac">
+                                <connections>
+                                    <action selector="inspectMenuItemPressed" destination="5OI-QQ-smy" id="3ky-bI-oa9"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reset Plot" image="reset" id="hPL-SM-4bf">
+                                <connections>
+                                    <action selector="resetMenuItemPressed" destination="5OI-QQ-smy" id="2iq-kq-6iG"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                     <connections>
