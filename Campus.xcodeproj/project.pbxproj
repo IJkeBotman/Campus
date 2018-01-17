@@ -19,6 +19,17 @@
 		0A630508200FE8FC00DABF52 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630507200FE8FC00DABF52 /* InterfaceController.swift */; };
 		0A63050A200FE8FC00DABF52 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630509200FE8FC00DABF52 /* ExtensionDelegate.swift */; };
 		0A63050C200FE8FC00DABF52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A63050B200FE8FC00DABF52 /* Assets.xcassets */; };
+		0A63051C200FEA1700DABF52 /* WatchGraphGeneratorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A63051B200FEA1700DABF52 /* WatchGraphGeneratorSettings.swift */; };
+		0A63051F200FEA3E00DABF52 /* GraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A63051E200FEA3E00DABF52 /* GraphGenerator.swift */; };
+		0A630521200FEA6900DABF52 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630520200FEA6900DABF52 /* DateExtensions.swift */; };
+		0A630523200FEA8200DABF52 /* NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630522200FEA8200DABF52 /* NSStringExtensions.swift */; };
+		0A630525200FEA9E00DABF52 /* Census.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630524200FEA9E00DABF52 /* Census.swift */; };
+		0A630527200FEAC000DABF52 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630526200FEAC000DABF52 /* UIColorHex.swift */; };
+		0A630528200FEAD600DABF52 /* GraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A63051E200FEA3E00DABF52 /* GraphGenerator.swift */; };
+		0A630529200FEAD900DABF52 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630520200FEA6900DABF52 /* DateExtensions.swift */; };
+		0A63052A200FEADB00DABF52 /* NSStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630522200FEA8200DABF52 /* NSStringExtensions.swift */; };
+		0A63052B200FEADF00DABF52 /* Census.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630524200FEA9E00DABF52 /* Census.swift */; };
+		0A63052C200FEAE100DABF52 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A630526200FEAC000DABF52 /* UIColorHex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +91,12 @@
 		0A630509200FE8FC00DABF52 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0A63050B200FE8FC00DABF52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A63050D200FE8FC00DABF52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A63051B200FEA1700DABF52 /* WatchGraphGeneratorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchGraphGeneratorSettings.swift; sourceTree = "<group>"; };
+		0A63051E200FEA3E00DABF52 /* GraphGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGenerator.swift; sourceTree = "<group>"; };
+		0A630520200FEA6900DABF52 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		0A630522200FEA8200DABF52 /* NSStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStringExtensions.swift; sourceTree = "<group>"; };
+		0A630524200FEA9E00DABF52 /* Census.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Census.swift; sourceTree = "<group>"; };
+		0A630526200FEAC000DABF52 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +120,7 @@
 		0A6304D8200FE8FC00DABF52 = {
 			isa = PBXGroup;
 			children = (
+				0A63051D200FEA2F00DABF52 /* Shared */,
 				0A6304E3200FE8FC00DABF52 /* Campus */,
 				0A6304F7200FE8FC00DABF52 /* Campus WatchKit App */,
 				0A630506200FE8FC00DABF52 /* Campus WatchKit Extension */,
@@ -150,8 +168,21 @@
 				0A630509200FE8FC00DABF52 /* ExtensionDelegate.swift */,
 				0A63050B200FE8FC00DABF52 /* Assets.xcassets */,
 				0A63050D200FE8FC00DABF52 /* Info.plist */,
+				0A63051B200FEA1700DABF52 /* WatchGraphGeneratorSettings.swift */,
 			);
 			path = "Campus WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0A63051D200FEA2F00DABF52 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0A63051E200FEA3E00DABF52 /* GraphGenerator.swift */,
+				0A630520200FEA6900DABF52 /* DateExtensions.swift */,
+				0A630522200FEA8200DABF52 /* NSStringExtensions.swift */,
+				0A630524200FEA9E00DABF52 /* Census.swift */,
+				0A630526200FEAC000DABF52 /* UIColorHex.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A63052C200FEAE100DABF52 /* UIColorHex.swift in Sources */,
+				0A630528200FEAD600DABF52 /* GraphGenerator.swift in Sources */,
+				0A630529200FEAD900DABF52 /* DateExtensions.swift in Sources */,
+				0A63052A200FEADB00DABF52 /* NSStringExtensions.swift in Sources */,
 				0A6304E7200FE8FC00DABF52 /* ViewController.swift in Sources */,
+				0A63052B200FEADF00DABF52 /* Census.swift in Sources */,
 				0A6304E5200FE8FC00DABF52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A63051F200FEA3E00DABF52 /* GraphGenerator.swift in Sources */,
+				0A630525200FEA9E00DABF52 /* Census.swift in Sources */,
+				0A630521200FEA6900DABF52 /* DateExtensions.swift in Sources */,
 				0A63050A200FE8FC00DABF52 /* ExtensionDelegate.swift in Sources */,
+				0A630523200FEA8200DABF52 /* NSStringExtensions.swift in Sources */,
+				0A630527200FEAC000DABF52 /* UIColorHex.swift in Sources */,
+				0A63051C200FEA1700DABF52 /* WatchGraphGeneratorSettings.swift in Sources */,
 				0A630508200FE8FC00DABF52 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
